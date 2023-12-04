@@ -6,7 +6,8 @@ import mongoose from "mongoose";
 import UserRoutes from "./users/routes.js";
 import session from "express-session";
 
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
+const CONNECTION_STRING = "mongodb+srv://admin:admin@cluster0.lqpvjec.mongodb.net/?retryWrites=true&w=majority"
+//const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
 mongoose.connect(CONNECTION_STRING);
 import CourseRoutes from "./courses/routes.js";
 import ModuleRoutes from "./modules/routes.js";
